@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo di sondaggio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="intestazione">
+            <!--gli id sono MOOOOOLTO importanti, è meglio metterli in [quasi] tutti gli elementi-->
+            <h1 id="title">Vuoi diventare un nostro collaboratore?</h1>
+            <p id="description"> Compila questo form e ti ricontatteteremo!</p>
+        </div>
+
+
+
+        <!--TODO:  inserire all'interno di action un sito web con cui provare ad effettuare una richiesta post-->
+        <form id="survey-form" action="url" method="post">
+            
+            <fieldset>
+                <!--è anche importante collegare sempre le label con i rispettivi input, che siano di testo o qualunque altra cosa (COLLEGAENTO FOR-ID)-->
+                <label id="name-label" for="name">Nome <input id="name" type="text"
+                        placeholder="Mario" required></label>
+                <label id="last-name-label" for="last-name">Cognome <input type="text" id="last-name" placeholder="Rossi" required></label>
+                <label id="email-label" for="email">Email <input type="email" id="email" placeholder="mariorossi@mail.it"
+                        required></label>
+                <!--TODO:  riguardare il punto 10-->
+                <label id="number-label" for="number">Età <input type="number" id="number" placeholder="18" min="18" max="120"></label>
+            </fieldset>
+            <fieldset>
+                <label for="job">Che ruolo giochi?
+                    <select id="dropdown" name="job" >
+                        <option value="">(scegli un'opzione)</option>
+                        <option value="1">programmatore web</option>
+                        <option value="2">grafico</option>
+                        <option value="3">sistemista</option>
+                        <option value="4">accettazione</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Da dove vorresti lavorare? (obbligatorio)</legend>
+                <label><input value="0" type="radio" name="where-to-work" id="home" checked> Casa</label>
+                <label><input value="1" type="radio" name="where-to-work" id="company"> Azienda</label>
+            </fieldset>
+            <fieldset>
+                <legend>Quali linguaggi di programmazione conosci?</legend>
+                <label for="c-plusplus"><input id="c-plusplus" value="1" type="checkbox"> C++</label>
+                <label for="c-sharp"><input id="c-sharp" value="2" type="checkbox"> C#</label>
+                <label for="c-language"><input id="c-language" value="3" type="checkbox"> C</label>
+                <label for="python-language"><input id="python-language" value="4" type="checkbox"> Python</label>
+                <label for="javascript"><input id="javascript" value="5" type="checkbox"> JavaScript</label>
+                <label for="html-non-language"><input id="html-non-language" value="6" type="checkbox"> HTML</label>
+                <label for="kotlin-language"><input id="kotlin-language" value="7" type="checkbox"> Kotlin</label>
+                <label for="sql-server"><input id="sql-server" name value="8" type="checkbox"> SQL</label>
+                <label for="go-language"><input id="go-language" name value="9" type="checkbox"> Go</label>
+
+            </fieldset>
+
+
+            <label for="comment" id="final-comment">Dicci qualcosa di più 
+                <textarea placeholder="Mi piace programmare sulla spiaggia..." rows="7" cols="40"></textarea>
+            </label>
+            <label for="terms-and-conditions">
+                <input class="inline" id="terms-and-conditions" value="1" type="checkbox"  name="terms-and-conditions" required/>
+                I accept the terms and conditions
+            </label>
+            <label for="submit"><input class="align" type="submit" id="submit"></label>
+            
+
+
+
+        </form>
+
+        <footer id="footer-contact">
+            <p>Pietro Tombaccini</p>
+            <p>ptombaccini@gmail.com</p>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>

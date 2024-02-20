@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>WikiPy</title>
+</head>
+
+<body>
+
+    <!-- TODO: Nav bar deve essere sempre visibile e i link devono portare alle rispettive section, negli elementi regular size (tablet, desktop) la navbar deve essere sulla sinistra-->
+    <!-- TODO: inserire almeno un media query -->
+    <nav id="navbar">
+        <header>
+            Python
+        </header>
+        <a href="#Intro" class="nav-link">Intro</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Print" class="nav-link">Print</a>
+        <a href="#Cycles" class="nav-link">Cycles</a>
+        <a href="#Functions" class="nav-link">Functions</a>
+        <a href="#Requests" class="nav-link">Requests</a>
+        <a href="#Data_Types" class="nav-link">Data Types</a>
+        <a href="#Conclusion" class="nav-link">Conclusion</a>
+    </nav>
+    <main id="main-doc">
+
+        <!-- modello di come deve essere ALMENO una section: 10-paragrafi 5-code 5-listItem (in totale su tutti le section), si possono logicamente aggiungere altri se si vuole -->
+        <!-- I nomi degli id delle section devono essere uguali al nome del titolo, sostituendo opportunamente gli spazi con underscore(_) quindi... 'Introduction to Python' -> 'Introduction_to_Python' -->
+        <section id="Intro" class="main-section">
+            <header>
+                Intro
+            </header>
+            <p>Python is an interpreted, high-level, general-purpose programming language, known for its simplicity
+                and elegance. Created by Guido van Rossum and first released in 1991, Python has since become one of
+                the most popular programming languages in the world.</p>
+            <p>Its design philosophy emphasizes code readability with the use of significant whitespace and a syntax
+                that allows programmers to express concepts in fewer lines of code than might be used in languages
+                such as C++ or Java.</p>
+            <p>Python is dynamically typed and garbage-collected, which makes it an excellent choice for a wide
+                range of applications, from simple scripts to complex machine learning algorithms. It supports
+                multiple programming paradigms, including procedural, object-oriented, and functional programming.
+                Python's comprehensive standard library, rich ecosystem of third-party packages, and active
+                community contribute to its versatility, allowing developers to work on web development, data
+                analysis, artificial intelligence, scientific computing, and more.</p>
+        </section>
+        <section id="Variables" class="main-section">
+            <header>
+                Variables
+            </header>
+            <p>In Python, a variable is a name attached to a particular object. Variables allow you to store data,
+                manipulate it, and pass it throughout your program. Unlike some programming languages, Python does
+                not require you to declare the type of your variable upfront; it dynamically infers the type based
+                on the value you assign to it. This feature makes Python highly flexible and user-friendly,
+                especially for beginners.</p>
+            <p>This is for declaring <strong>strings</strong></p>
+            <code>
+                name = "Alice"
+            </code>
+            <p>This is for declaring <strong>integers</strong>:</p>
+            <code>
+                age = 13
+            </code>
+            <p>And this is for declaring booleans:</p>
+            <code>
+                is_student = true
+            </code>
+            <p>Have you noticed that you don't need to specify the type of the varibale? This is because Python is
+                dynamically typed, which means the type of a variable can change based on the value assigned to it.
+            </p>
+        </section>
+        <section id="Print" class="main-section">
+            <header>
+                Print
+            </header>
+            <h3>Getting Started with the <strong>print</strong> Command in Python</h3>
+                <p>The <strong>print</strong> command is one of the most frequently used functions in Python, essential
+                    for
+                    outputting data to the console. It serves as a powerful tool for displaying strings, numbers, and
+                    other objects, making it invaluable for debugging and providing user feedback.</p>
+
+
+                <p>At its simplest, the <strong>print</strong> command requires just the message or data you wish to
+                    display:</p>
+                <code>print("Hello, World!")<br>
+                    <span class="py-comment">#This command outputs the string Hello, World! to the console.</span>
+                </code>
+
+                <p><strong>print</strong> can take multiple arguments, separated by commas, and will output them in a
+                    single line separated by spaces by default:</p>
+                <code>print(name, "is", age, "years old.")<br>
+                    <span  class="py-comment">#This will output: Alice is 30 years old.</span></code>
+
+                <p>You can customize the separator between items using the sep parameter:</p>
+                <code>print("Python", "Java", "C++", sep=", ")<br>
+                   <span  class="py-comment">#This will output: Python, Java, C++.</span> 
+                </code>
+
+                <p>By default, print adds a newline character (\n) at the end of the message, so subsequent print calls
+                    are on new lines. You can change this behavior with the end parameter:</p>
+                <code>print("Hello,", end=" ")<br>print("World!")<br>
+                      
+                    <span  class="py-comment">#This will output: Hello, World!</span>
+                </code>
+
+                <p>The print command can be combined with string formatting methods like f-strings (formatted string
+                    literals) for more dynamic outputs:</p>
+                <code>print(f"{name} is {age} years old.")<br>
+                    <span  class="py-comment">#This will also output: Alice is 30 years old.</span>
+                </code>
+        </section>
+
+        <section id="Cycles" class="main-section">
+            <header>
+                Cycles
+            </header>
+            <h3>Introduction to Python Loops</h3>
+                <p>Loops in Python are a fundamental concept used to repeat a block of code multiple times. Python
+                    provides two primary types of loops: the <strong>for</strong> loop and the <strong>while</strong>
+                    loop.
+                    Understanding how to use these loops allows for efficient repetition of tasks, making code more
+                    compact and readable.</p>
+
+                <h3>The <strong>for</strong> Loop</h3>
+
+                <p>The <strong>for</strong> loop in Python is used to iterate over a sequence (such as a list, tuple,
+                    dictionary, set, or string) and execute a block of code for each item in the sequence.</p>
+                <code>
+                    for i in range(5):<br>
+                    &nbsp;&nbsp;&nbsp;print(i)
+                </code>
+                <p>This code snippet uses <strong>range(5)</strong> to create a sequence of numbers from 0 to 4 and
+                    prints
+                    each number. The <strong>for</strong> loop iterates through this sequence, assigning each value to
+                    <strong>i</strong> and executing the print statement in each iteration.
+                </p>
+
+                <h3>The <strong>while</strong> Loop</h3>
+                <p>The <strong>while</strong> loop in Python repeatedly executes a block of code as long as a condition
+                    is
+                    true. It's useful for situations where you need to loop until a certain condition changes, which may
+                    not be a fixed number of times.</p>
+                <code>
+                    x = 0<br>
+                    while x &lt; 5:<br>
+                    &nbsp;&nbsp;&nbsp;print(x)<br>
+                    &nbsp;&nbsp;&nbsp;x += 1
+                </code>
+                <p>This snippet starts with <strong>x</strong> set to 0 and continues to loop as long as
+                    <strong>x</strong> is
+                    less than 5. Inside the loop, it prints the current value of <strong>x</strong> and then increments
+                    <strong>x</strong> by 1. Once <strong>x</strong> reaches 5, the condition becomes false, and the
+                    loop stops.
+                </p>
+
+                <h3>Breaking Out of a Loop</h3>
+                <p>Sometimes you may want to exit a loop before it has gone through all the items. Python provides the
+                    <strong>break</strong> statement for such situations.
+                </p>
+                <code>
+                    for i in range(10):<br>
+                    &nbsp;&nbsp;&nbsp;if i == 5:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                    &nbsp;&nbsp;&nbsp;print(i)
+                </code>
+                <p>This code will print numbers from 0 to 4. When <strong>i</strong> equals 5, the
+                    <strong>break</strong>
+                    statement is executed, causing the loop to terminate early, and thus the numbers 5 through 9 are not
+                    printed.
+                </p>
+
+                <h3>Continuing to the Next Iteration</h3>
+                <p>If you want to skip the rest of the code inside the loop for the current iteration and move directly
+                    to the next one, you can use the <strong>continue</strong> statement.</p>
+                <code>
+                    for i in range(10):<br>
+                    &nbsp;&nbsp;&nbsp;if i % 2 == 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+                    &nbsp;&nbsp;&nbsp;print(i)
+                </code>
+                <p>This snippet prints only odd numbers between 0 and 9. If <strong>i</strong> is even (i.e.,
+                    <strong>i % 2 == 0</strong>), the <strong>continue</strong> statement is executed, which skips the
+                    print
+                    statement and proceeds to the next iteration of the loop.
+                </p>
+        </section>
+        <section id="Functions" class="main-section">
+            <header>
+                Functions
+            </header>
+            <h3>Introduction to Python Functions</h3>
+            <p>Functions in Python are defined blocks of code designed to perform a specific task. They improve code
+                reusability and organization. A function can take parameters, execute code, and return a result. Python
+                functions are defined using the <strong>def</strong> keyword followed by a function name and parentheses
+                <strong>()</strong>.
+            </p>
+
+            <h3>Defining a Function</h3>
+            <p>To define a function in Python, use the <strong>def</strong> keyword, followed by the function name and
+                parentheses. If your function takes arguments, you would list them inside these parentheses. The code
+                block within every function starts with a colon <strong>:</strong> and is indented.</p>
+            <code>
+            def greet(name):
+                print(f"Hello, {name}!")
+            </code>
+            <p>This code snippet defines a function named <strong>greet</strong> that takes a single parameter,
+                <strong>name</strong>, and prints a greeting message using that name.
+            </p>
+
+            <h3>Calling a Function</h3>
+            <p>After defining a function, you call it by using its name followed by parentheses. If the function
+                requires arguments, you'll include them inside the parentheses.</p>
+            <code>
+            greet("Alice")
+            </code>
+            <p>This line calls the <strong>greet</strong> function defined earlier, passing "Alice" as an argument,
+                which results in the output: Hello, Alice!</p>
+
+            <h3>Return Values</h3>
+            <p>A function can return a value back to the caller using the <strong>return</strong> keyword. This is
+                useful when you need the function to produce a result that you want to use later in your program.</p>
+            <code>
+            def add(a, b):
+                return a + b
+            </code>
+            <p>This function, <strong>add</strong>, takes two parameters, <strong>a</strong> and <strong>b</strong>,
+                adds them together, and returns the result.</p>
+
+            <h3>Default Argument Values</h3>
+            <p>You can provide default values for function arguments. If the caller does not provide a value for an
+                argument with a default value, the function will use the default.</p>
+            <code>
+            def greet(name="World"):
+                print(f"Hello, {name}!")
+            </code>
+            <p>In this version of the <strong>greet</strong> function, <strong>name</strong> has a default value of
+                "World". If <strong>greet</strong> is called without an argument, it will print "Hello, World!"</p>
+
+        </section>
+        <section id="Requests" class="main-section">
+            <header>
+                Requests
+            </header>
+            <h3>Working with the Python Requests Library</h3>
+            <p>The Python <strong>requests</strong> library simplifies making HTTP requests to web servers, allowing you
+                to interact with APIs or fetch web page data easily. It abstracts the complexities of making requests
+                behind a beautiful, simple API.</p>
+
+            <h3>Installing the Requests Library</h3>
+            <p>Before you can start making HTTP requests, you need to install the <strong>requests</strong> library. If
+                you haven't installed it yet, you can do so using pip:</p>
+            <code>
+            pip install requests
+            </code>
+
+            <h3>Importing the Requests Library</h3>
+            <p>Once installed, you can use the <strong>requests</strong> library by importing it into your Python
+                script.</p>
+            <code>
+            import requests
+            </code>
+
+            <h3>Making a GET Request</h3>
+            <p>To retrieve data from a specified resource, use the <strong>GET</strong> method. The
+                <strong>requests.get()</strong> function takes the URL of the resource as a parameter.
+            </p>
+            <code>
+            response = requests.get('http://api.example.com/data')
+            print(response.text)
+            </code>
+            <p>This code snippet sends a GET request to <em>http://api.example.com/data</em> and prints the response
+                text. The <strong>response</strong> object contains many properties and methods to inspect the response
+                from the server, such as <strong>status_code</strong>, <strong>text</strong>, and
+                <strong>json()</strong> for JSON responses.
+            </p>
+
+            <h3>Making a POST Request</h3>
+            <p>To send data to a server to create or update a resource, use the <strong>POST</strong> method. The
+                <strong>requests.post()</strong> function requires the URL and the data you wish to send. Data can be
+                passed as a dictionary, which will be automatically form-encoded by the library.
+            </p>
+            <code>
+            data = {'key': 'value'}
+            response = requests.post('http://api.example.com/submit', data=data)
+            print(response.text)
+            </code>
+            <p>This snippet sends a POST request to <em>http://api.example.com/submit</em> with some data. The server's
+                response is captured in the <strong>response</strong> object and printed out. For JSON data, use the
+                <strong>json</strong> parameter instead of <strong>data</strong>.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>The <strong>requests</strong> library in Python makes HTTP communication intuitive and straightforward.
+                By following these examples, you can easily integrate GET and POST requests into your Python projects to
+                interact with web services or APIs efficiently.</p>
+
+
+        </section>
+
+        <section id="Data_Types" class="main-section">
+            <header>
+                Data Types
+            </header>
+            <h3>Key Python Data Types</h3>
+            <p>Python offers a variety of data types used to store different kinds of information. Here are six
+                important data types essential for Python programming:</p>
+
+            <ul>
+                <li>
+                    <h4>Integer (<strong>int</strong>)</h4>
+                    <p>Represents whole numbers, positive or negative, without decimals. Used for arithmetic operations,
+                        loops, and more.</p>
+                    <pre>example = 42</pre>
+                </li>
+                <li>
+                    <h4>Floating Point Number (<strong>float</strong>)</h4>
+                    <p>Represents real numbers and includes a decimal point. Essential for any calculations requiring
+                        fractional numbers.</p>
+                    <pre>example = 3.14</pre>
+                </li>
+                <li>
+                    <h4>String (<strong>str</strong>)</h4>
+                    <p>A sequence of characters used to store text. Strings are immutable and can be manipulated with
+                        various methods.</p>
+                    <pre>example = "Hello, world!"</pre>
+                </li>
+                <li>
+                    <h4>Boolean (<strong>bool</strong>)</h4>
+                    <p>Represents one of two values: <strong>True</strong> or <strong>False</strong>. Booleans are often
+                        the result of comparisons or conditions in Python.</p>
+                    <pre>example = True</pre>
+                </li>
+                <li>
+                    <h4>List</h4>
+                    <p>An ordered collection of items that can be of mixed data types. Lists are mutable, allowing
+                        modification after creation.</p>
+                    <pre>example = [1, "two", 3.0]</pre>
+                </li>
+                <li>
+                    <h4>Dictionary (<strong>dict</strong>)</h4>
+                    <p>A collection of key-value pairs. Dictionaries are unordered and mutable, allowing data to be
+                        stored and accessed efficiently.</p>
+                    <pre>example = {"name": "Alice", "age": 30}</pre>
+                </li>
+            </ul>
+
+            <p>Each data type has its unique properties and usage scenarios, making Python a versatile and powerful
+                programming language.</p>
+
+        </section>
+        <section id="Conclusion" class="main-section">
+            <header>
+                Conclusion
+            </header>
+            <p>As we've explored through this wiki, Python stands out as a remarkably powerful and versatile programming language, favored by beginners and experts alike for its simplicity, readability, and breadth of application. From web development to data science, machine learning, automation, and beyond, Python's extensive libraries and frameworks offer tools to tackle virtually any programming challenge.</p>
+                <p>The beauty of Python lies not just in its technical capabilities but also in its vibrant and supportive community. Programmers from around the world contribute to the ever-growing ecosystem of Python libraries, share knowledge through forums and discussions, and continuously evolve the language through contributions to its open-source projects.</p>
+                <p>In conclusion, whether you're automating a small task, analyzing a dataset, building a website, or crafting complex machine learning models, Python offers the tools and community support to turn your ideas into reality. We hope this wiki serves as a launching pad for your Python projects and inspires you to explore, learn, and contribute back to the rich ecosystem that makes Python truly special.</p>
+                <br><p>Happy coding!</p>
+                <p>This wiki is owned by <a id="credit-link" href="https://github.com/pietombic">Pietro Tombaccini</a>, creator and curator of the page</p>
+            
+            
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+
+body{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto; 
+    background-color: #e9e0d1; 
+    font-weight: 400;
+}
+
+/* FUNCTIONS */
+.italic{
+    font-style: italic;
+    letter-spacing: .5px;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+html{
+    padding:0;
+}
+header{
+    margin: 10px;
+    border-bottom: .5px solid #404040;
+    border-top: .5px solid #404040;
+
+  
+
+}
+#logo{
+    height: 200px;
+    aspect-ratio: 1/1;
+}
+.titles{
+    margin-top: 100px;
+    display: block;
+
+    font-weight: 100;
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 100px;
+
+
+
+
+}
+.noMarginsTB{
+    margin: 0;
+}
+.small{
+    font-size: 20px;
+
+
+}
+
+.titles *{
+    display: flex;
+    justify-content: center;
+}
+.prova{
+    height:200vh;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    height: 100vh;
+}
+.vita{
+
+    margin:200px 0;
+}
+.vita ul>li{
+    list-style: circle;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.vita ul{
+    margin-top: 50px;
+}
+.lessico ul>li{
+    list-style: circle;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.opere ul>li{
+    list-style: circle;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.opere{
+    margin:200px 0;
+}
+.pensiero ul>li{
+    list-style: circle;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.pensiero{
+    margin-bottom: 200px;
+}
+.marginilaterali{
+    margin:0 200px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #e1d7c5;
+    margin-bottom:0;
+}

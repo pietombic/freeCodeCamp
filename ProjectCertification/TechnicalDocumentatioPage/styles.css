@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: "Kode Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    color:#fff !important;
+    background-color: #090909;
+}
+
+#navbar{
+    display:flex;
+    flex-direction: column;
+
+    position: fixed;
+    width:300px;
+    justify-content: space-around;
+    top:0;
+    left:0;
+    padding:30px;
+    height: 100vh;
+    border-right:1px solid #fff;
+
+
+}
+#navbar a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 200;
+    font-size: 2.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+#navbar a:hover{
+    text-decoration: underline;
+}
+#navbar header{
+    font-weight: 200;
+    font-size: 35px;
+}
+.main-section{
+    margin-left: 380px;
+    margin-top:100px
+
+}
+
+.main-section header{
+    margin-left: -50px;
+    font-weight: 300;
+    font-size: 40px;
+
+}
+.main-section p{
+
+    font-size: 18px;
+    letter-spacing: .04px;
+    width: 80%;
+    padding:14px;
+    color:#f7f7f7;
+}
+.main-section code{
+    width:80%;
+    background-color: #151515;
+    display: block;
+    line-height: 2;
+    text-align: left;
+    position: relative;
+    padding:20px;
+    margin-left: 13px;
+
+    border-radius: 10px;
+    
+}
+.py-comment{
+    color:#929292;
+}
+.main-section strong{
+
+    text-decoration: underline;
+}
+.main-section h3{
+    margin-top:60px;
+    margin-left: -15px;
+}
+#credit-link{
+    color:rgb(75, 238, 39);
+    text-decoration: none;
+}
+#credit-link:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:780px) {
+    .main-section{
+        margin-left: 250px;
+    }
+    #navbar{
+        width: 200px;
+    }
+
+}
