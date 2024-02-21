@@ -1,1 +1,88 @@
 /* inserire almeno una media query */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --background-color1: #000;
+    --font-color1:rgba(255,255,255,0.9);
+}
+*{
+    box-sizing:border-box;
+
+}
+html{
+    background-color:var(--background-color1);
+    color:var(--font-color1);
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    
+
+}
+body{
+    padding: 0;
+    margin:0;
+}
+
+/* classi iniziali */
+.smaller{
+    font-size: 1.5rem;
+}
+.small{
+    font-size: 2rem;
+}
+.medium{
+    font-size: 2.5rem;
+}
+.large{
+    font-size: 3rem;
+}
+.extraLarge{
+    font-size: 3.5rem;
+}
+
+/* navbar superiore */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding: 0 3rem;
+}
+#navbar a{
+    letter-spacing: .2px;
+    color: var(--font-color1);
+    text-decoration: none;
+    padding:.5rem;
+    transition: all .2s;
+
+}
+/* TODO: mettere una decorazione per :hover dei link */
+#navbar a:hover{
+
+  
+}
+.headerNavbar{
+    position: fixed;
+    height: auto;
+    width:100%;
+}
+#bottomNav{
+    height:50px;
+    width:400px;
+    border: 1px solid white;
+    border-radius: 40px;
+    position:fixed;
+    bottom:2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+
