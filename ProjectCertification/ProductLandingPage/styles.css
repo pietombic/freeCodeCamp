@@ -1,1 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root{
+    --paragraph-color1: #303030;
+    --paragraph-color2:#fff;
+    --background-color1:#fff;
+    --background-color2:#202020; 
+    
+}
+body{
+    overflow-x: hidden;
+
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 /* utilizzare flexbox e mettere almeno una media query*/
+html{
+    font-family: "Kode Mono", monospace;
+    font-size: 62.5%;
+}
+
+
+.logo-img{
+    height:100%;
+
+    background-color: #fff;
+}
+#header{
+    display: flex;
+    flex-direction: row ;
+    height: 5rem;
+    width:100vw;
+    top:0;
+    position: sticky;
+    place-items: center;
+    
+}
+#header img{
+    margin-left:1vw;
+}
+#nav-bar{
+    padding:2rem;
+    margin-right: 0;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    gap:30px;
+
+    
+
+
+}
+#form input{
+    font-size: 2rem;
+    height:8rem;
+    width: 20vw;
+}
+
+
+#p-logo{
+
+    font-size: 2.5rem;
+    padding:2rem;
+    background-color: #fff;
+}
+.nav-link{
+    color:var(--paragraph-color1);
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 2rem;
+    transition: .3s all;
+    padding:.7rem;
+}
+.nav-link:hover{
+    background-color: var(--paragraph-color1);
+    color:#fff;
+}
+#first-paragraph{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.big{
+    font-size:3rem;
+}
+.paragraph{
+    width: 60vw;
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom:3rem;
+    text-align: center;
+    color:var(--paragraph-color1);
+    
+}
+
+.biggerText{
+    font-size:larger;
+    font-weight: 600;
+    
+    
+}
+#img-keyBRD{
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+.card-container{
+    margin-top:5rem;
+    display: flex;
+
+    width:100%;
+    justify-content: space-evenly;
+}
+.card{
+
+    width: 25vw;
+    max-width:25vw;
+
+}
+.card-img{
+    width:100%
+}
+.card-h3{
+    font-size:3rem;
+    text-align:center;
+}
+.card-p{
+    font-size:2rem;
+    text-align:center;
+}
+#form{
+
+    height: 20rem;;
+    display: flex;
+    justify-content: center;
+    gap:5vw;
+}
+input[type="submit"]{
+    background-color: var(--background-color1);
+
+    font-family: "Kode Mono", monospace;
+}
+input[type="submit"]:hover{
+    background-color:var(--background-color2);
+    color:var(--paragraph-color2);
+}
+
+input[type="email"]{
+
+    font-family: "Kode Mono", monospace;
+    padding:2rem;
+}
+input[type="email"]:focus{
+    outline-color: var(--paragraph-color1);
+}
+
+@media  (max-width:700px){
+    #nav-bar{
+        content-visibility: hidden;
+    }
+}
+.iframe-1-div{
+    display: flex;
+    justify-content: center;
+}

@@ -10,24 +10,56 @@
 <body>
     <main>
         <header id="header">
-            <!-- TODO: inserire un logo -->
-            <img id="header-img" src="" alt="">
-            <!-- TODO: creare una navbar, deve essere sempre nella parte superiore della viewport-->
+
+            <img class="logo-img" id="header-img"src="../imgs/keyb.png" alt="keyboard">
+            <p id="p-logo">KeyBRD</p>
             <nav id="nav-bar">
-                <!-- TODO: inserire le ancora all'interno dell'href -->
-                <a class="nav-link" href=""></a>
-                <a class="nav-link" href=""></a>
-                <a class="nav-link" href=""></a>
+                <a class="nav-link" href="#keyboards">Keyboards</a>
+                <a class="nav-link" href="#How_it_works">How it works</a>
+                <a class="nav-link" href="#form">Contact us!</a>
             </nav>
 
         </header>
+        
+       
+        <section id="first-paragraph">
+            <img class="center" id="img-keyBRD" src="../imgs/keychron.png" alt="a beautiful mechanical keyboard">
+            <p class="big paragraph ">Discover the perfect touch with <span class="biggerText">KeyBRD</span>: your exclusive destination for custom mechanical keyboards. Every keystroke, a symphony. Bring your desk to life with unique designs, premium materials, and unparalleled customization. KeyBRD, where your typing experience becomes art.</p>
+        </section>
+        <h3 id="keyboards" style="margin-top:10rem;" class="paragraph big">Our keybords!</h3>
+        <div class="card-container">
+            <div id="first-keyboard" class="card">
+                <img class="card-img" alt="KeyBRD 1s keyboard" loading="lazy" src="../imgs/keychron.png">
+                <h3 class="card-h3">KeyBRD 1s</h3>
+                <p class="card-p">Experience the pinnacle of precision with KeyBRD 1s. Designed for the discerning typist, this keyboard combines sleek aesthetics with top-notch responsiveness. With customizable keys and dynamic backlighting, the 1s is not just a tool, but a centerpiece of your workspace.</p>
+            </div>
+            <div id="second-keyboard" class="card">
+                <img class="card-img" alt="KeyBRD 2q keyboard" loading="lazy"src="../imgs/keychron.png">
+                <h3 class="card-h3">KeyBRD 2q</h3>
+                <p class="card-p">Embrace the future of typing with KeyBRD 2q. This innovative model features cutting-edge tactile feedback and customizable macros for efficiency like never before. Its durable design and vibrant RGB lighting make the 2q a perfect blend of functionality and style.</p>
+            </div>
+            <div id="third-keyboard" class="card">
+                <img class="card-img" alt="KeyBRD 3t keyboard" loading="lazy"src="../imgs/keychron.png">
+                <h3 class="card-h3">KeyBRD 3t</h3>
+                <p class="card-p">Dive into a world of unmatched comfort and style with the KeyBRD 3t. Its ergonomic design and adjustable switches cater to long hours of typing or gaming without strain. With the 3t, enjoy a personalized typing journey that's as unique as you are.</p>
+            </div>
+            
+        </div>
         <!-- TODO: inserire un video di dimostrazione del prodotto -->
         <video id="video" src=""></video>
+        <h3 id="How_it_works" style="margin-top:10rem;" class="paragraph big">How it works!</h3>
+        <div class="iframe-1-div">
+            
+            <iframe id="iframe-1" width="560" height="315" src="https://www.youtube.com/embed/0A4YYsnkhP8?si=k_DGhvL8NvnSk0NJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+       
 
         <!-- TODO: implementazione di un form -->
-        <form method="post" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" placeholder="mariorossi@mail.it" type="email">
-            <input id="submit" type="subtmit" >
+        <h3 id="keyboards" style="margin-top:10rem;" class="paragraph big">Contact us!</h3>
+        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+
+            <input name="email" class="medium" id="email" placeholder="mariorossi@mail.it" type="email">
+            <input id="submit" type="submit" value="Send">
 
         </form>
     </main>
