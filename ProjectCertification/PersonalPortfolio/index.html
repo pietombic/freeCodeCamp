@@ -9,28 +9,60 @@
     <title>Pietro Tombaccini</title>
 </head>
 <body>
+    <nav id="navbar" class="small light">
+        <a href="#welcome-section">Pietro Tombaccini</a>
+        <a href="">Contact me!</a>
+    </nav>
+    <nav id="bottomNav" class="smaller">
+            <a href="#who_i_am">Who I am</a>
+            <a href="#projects">Projects</a>
+            <a href="#social_media">Social Media</a>
+    </nav>
     <main>
-        <header class="headerNavbar">
-            <!-- TODO: la navbar deve essere sempre visivile nella parte sopra del progetto -->
-            <nav id="navbar" class="small">
-                <a href="">Portfolio</a>
-                <a href="">Contact me!</a>
-            </nav>
-            
-        </header>
-        <nav id="bottomNav" class="smaller">
-            
-        </nav>
-        <!-- TODO: modificare la schermata di WELCOME, deve essere di dimensione 100vh -->
         <section id="welcome-section">
-            <h1></h1>
+            <h1 class="extraLarge light">Hi, I'm <span style="font-size: larger;">Pietro</span></h1>
+            <h3 class="medium light">I'm a web developer (frontend addicted)</h3>
         </section>
+        
+        <!-- TODO: modificare la schermata di WELCOME, deve essere di dimensione 100vh -->
+
+        
         <section id="projects">
+            <h2 class="medium light inTheFront">Here's some of my projects</h2>
             <!-- TODO: inserire i progetti fatti in dei DIV con classe PROJECT-TILE, inserire anche dei link ai progetti -->
-            <div class="project-tile"></div>
+            <div class="projects-container">
+                <a href=""><div class="project-tile">
+                    <img src="./imgs/keybrd.png" alt="">
+                    <h3 class="large normal">KeyBRD</h3>
+                    <p class="small light">Discover the perfect touch with <span class="bold">KeyBRD</span>: your exclusive destination for custom mechanical keyboards</p>
+                </div></a>
+                <a href=""><div class="project-tile">
+                    <img src="./imgs/classmate.png" alt="">
+                    <h3 class="large normal">Classmate</h3>
+                    <p class="small light">Introducing Classmate, a revolutionary application designed to redefine the way students study and collaborate with their peers.</p>
+                </div></a>
+                <a href=""><div class="project-tile">
+                    <img src="./imgs/wikipy.png" alt="">
+                    <h3 class="large normal">WikiPy</h3>
+                    <p class="small light">Discover WikiPy: Your Comprehensive Guide to Python Programming. Your Gateway to Mastering Python from the Basics to Advanced Concepts!</p>
+                </div></a>
+                
+            </div>
+            
+
+            
         </section>
+        <section id="who_i_am">
+            <h2 class="medium light inTheFront">Who I am</h2>
+            <div style="height:400vh;"></div>
+        </section>
+        <section id="social_media">
+            
+        </section>
+        <footer id="contact_information"></footer>
         <!-- TODO: inserire il link al profilo GitHub o freeCodeCamp -->
         <a href=""></a>
+
 
     </main>
     
